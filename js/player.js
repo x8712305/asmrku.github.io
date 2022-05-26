@@ -1,4 +1,5 @@
 (function($){
+	var isFirst = 1;
 	// Settings
 	var isShowNotification = false,
 		isInitMarquee = true,
@@ -60,7 +61,7 @@
 				initMarquee();
 				isInitMarquee = false;
 			} else {
-				$('.marquee').marquee('resume');
+				//$('.marquee').marquee('resume');
 		    }
 	    }
 	}
@@ -71,7 +72,7 @@
 		$('.playback').removeClass('playing');
 		clearInterval(timeout);
 		if(isExceedTag()) {
-			$('.marquee').marquee('pause');
+			//$('.marquee').marquee('pause');
 		}
 	}
 
@@ -289,22 +290,24 @@
     	setProgress(audio.currentTime);
     });
 
+
+
 })(jQuery);
 
 
 function initMarquee(){
-	$('.marquee').marquee({
-	    //speed in milliseconds of the marquee
-	    duration: 15000,
-	    //gap in pixels between the tickers
-	    gap: 50,
-	    //time in milliseconds before the marquee will start animating
-	    delayBeforeStart: 0,
-	    //'left' or 'right'
-	    direction: 'left',
-	    //true or false - should the marquee be duplicated to show an effect of continues flow
-	    duplicated: true
-	});
+	//$('.marquee').marquee({
+	//    //speed in milliseconds of the marquee
+	//    duration: 15000,
+	//    //gap in pixels between the tickers
+	//    gap: 50,
+	//    //time in milliseconds before the marquee will start animating
+	//    delayBeforeStart: 0,
+	//    //'left' or 'right'
+	//    direction: 'left',
+	//    //true or false - should the marquee be duplicated to show an effect of continues flow
+	//    duplicated: true
+	//});
 }
 
 //检测标题和作者信息总宽度是否超出播放器，超过则返回true开启跑马灯

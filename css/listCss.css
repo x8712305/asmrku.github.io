@@ -1,0 +1,28 @@
+.textOver{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 150px;
+
+}
+img{
+    height: 155px;
+}
+
+.col-sm{
+    /*line-height: em;*/
+    margin-top: 2em;
+}
+
+body{
+    user-select: none;
+}
+
+button{
+    outline: none;
+}
+button .form-control:focus {
+    border: none;
+    box-shadow: none;
+    outline: none;
+}

@@ -46,7 +46,11 @@
 }
 .contr {
 	text-align:center;
-	margin-top:8px;
+	/*margin-top:8px;*/
+	/*todo
+	添加bootstrap需设置为0
+	*/
+	margin-top:0px;
 	position:relative;
 }
 #player .ctrl {
@@ -118,6 +122,11 @@
 	background-position:0 0 !important;
 	width:14px;
 	height:18px;
+	/*todo  添加bootstrap所需样式*/
+	position: absolute;
+	left: 94px;
+
+
 }
 .playback.playing {
 	background-position:-36px -63px !important;
